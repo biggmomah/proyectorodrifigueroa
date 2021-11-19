@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+header {
+  color: white; }
+
+ul {
+  list-style: none; }
+
+.img-logo {
+  width: 60px;
+  border-radius: 50%; }
+
+header div a {
+  text-decoration: none; }
+
+span {
+  color: white;
+  text-transform: uppercase; }
+
+h2 {
+  color: white;
+  padding: 20px; }
+
+#productos p {
+  color: lightblue; }
+
+.img-fluid {
+  border-radius: 50% 10%; }
+
+.img-nosotros {
+  width: 28rem;
+  margin: 0 auto;
+  transition: .4s;
+  border-radius: 10% 30% 10% 30%; }
+
+.img-nosotros:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
+.descripcion {
+  padding: 0 30px;
+  color: lightseagreen;
+  text-align: center; }
+
+.background {
+  background: rgba(0, 0, 0, 0.5); }
+
+.cartImg {
+  width: 35px;
+  cursor: pointer;
+  background-color: black; }
+
+.submenu {
+  position: relative; }
+
+.submenu #carrito {
+  display: none;
+  border-radius: 25px; }
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  min-width: 100%; }

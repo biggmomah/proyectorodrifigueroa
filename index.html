@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto Rodrigo Figueroa</title>
+</head>
+<body>
+
+
+<!-- HEADER -->
+<header class="header">
+ 
+
+   <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-lighttext-uppercase pt-4">
+    <div class="container-fluid">
+    <!-- LOGO -->
+    <a href="index.html" class="col-auto">
+        <img src="img/logotbh.png" alt="" class="img-logo alig">
+    </a>
+
+
+    <!-- LINKS -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+
+            <ul class="nav-item dropdown submenu" >
+              <li>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Carrito
+                </a>
+                  <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                      <thead>
+                        <tr>
+                          <th class="p-3">Nombre</th>
+                          <th class="p-3">Precio</th>
+                          <th class="p-3">Cantidad</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+
+                    <div class="row">
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light btn-sm w-100" id="vaciar-carrito">
+                          <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </button>
+                      </div>
+
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-outline-light btn-sm w-100" id="vaciar-carrito">
+                          <a href="#" id="finalizar-compra" class="button u-full-width">Finalizar compra</a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+      </ul>
+    </div>
+  </nav>
+
+
+        <!-- DESCRIPCION -->
+        <div class="row ">
+            <div 
+                <!-- TITULO -->
+                <h1 class="text-uppercase text-center ">
+                    El futuro es descentralizado.
+                </h1>
+                <!-- DESCRIPCION -->
+                <p class="text-center text-uppercase">Preparate para conocer todo lo que la blockchain tiene para proponerte con nuestro equipo.</p>
+           
+            </div>
+  
+        </div>
+    </div>
+</header>
+
+<!-- <div class="container ">
+    
+    <div class="row justify-content-between" id="productos" data-aos="fade-up" >
+     
+      
+            <article class="col-sm-4 mb-3 card producto">
+                <img src="img/mentornia.png"class="card-img-top">
+                <h4 class="text-center">Mentorias</h4>
+                <p class="text-center">Consultanos acerca de las mentorias</p>
+                <button class="btn-producto btn btn-outline-primary w-100 agregarMentoria"  data-nombre="mentorias"
+                id="1">Agregar producto</button>
+            </article>
+     
+
+      
+            <article class="col-sm-4 mb-3 card producto">
+                <img src="img/dinero.jpg"class="card-img-top">
+                <h4 class="text-center mt-auto">Gestion de carteras</h4>
+                <p>Gestiona tu capital con nosotros y hace rendir tu plata</p>
+                <button class="btn-producto btn  btn-outline-primary w-100 mt-auto"
+                data-nombre="gestion"
+                id="2">Agregar producto</button>
+            </article>
+      
+    
+    </div>
+
+    <section class="container mt-3">
+        <ul class="list-group" id="carrito">
+            
+        </ul>
+    </section>
+
+    <template id="template">
+        <li class="list-group d-flex justify-content-between align-items-center">
+            <span class="lead">Producto</span>
+            <span class="badge bg-primary rounded-pill">1</span>
+        </li>
+    </template> -->
+
+</div>
+
+ -->
+
+
+ <div class="mb-3 container" id="formulario" >
+   <div class="row">
+    <form onsubmit="enviarFormulario(event)" data-aos="fade-up"     data-aos-easing="ease-in-sine" id='listaConsultas' class="col-6">
+        <div>
+          <h2 class="text-center">Dejanos tu consulta</h2>
+          <label for="" class="form-label mt-3">Nombre y apellido</label>
+          <input type="text" class="form-control" id="nombre" >
+        </div>
+
+        <div>
+          <label for="" class="form-label mt-3">Email</label>
+          <input type="text" class="form-control" id="email" >
+        </div>
+
+        <div class="mt-4 form-floating">Dejanos tu consulta
+          <label for="" class="form-label mt-3"></label>
+          <input type="text" class="form-control" id="consulta" >
+        </div>
+        
+
+         <input class="btn btn-primary mt-3" id="btnSubmit" type="submit" value="Enviar consulta">
+    </form>  
+
+    <div class="mt-auto col-6">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/97ufCT6lQcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  </div> 
+  
+</div>
+
+    <!-- <div class="col">
+        <h3 class='text-center'>Consultas</h3>
+
+        <div id="listaConsultas">
+
+
+        </div >
+
+    </div>
+     -->
+
+<footer class="text-white background" >
+
+	<div class="container">
+	  <div class="row">
+  
+		<ul class="col-3 list-unstyled">
+		  <li class="font-weight-bold text-uppercase">resource</li>
+  
+		  <li>
+			<a href="https://es.tradingview.com/" class="text-reset">Tradingview</a>
+		  </li>
+  
+		  <li>
+			<a href="https://www.coingecko.com/es" class="text-reset">Coingecko</a>
+		  </li>
+  
+		</ul>
+  
+		<ul class="col-3 list-unstyled">
+		  <li class="font-weight-bold text-uppercase">quick</li>
+		  <li><a href="index.html" class="text-reset">Home</a></li>
+		</ul>
+  
+	  <ul class="col-3 list-unstyled">
+  
+		  <div class="row">
+			<li class="d-flex justify-content-between">
+  
+			  <a href="https://www.instagram.com/" class="text-reset">
+				<i class="fab fa-instagram"></i>
+			  </a>
+  
+			  <a href="https://twitter.com/home" class="text-reset">
+				<i class="fab fa-twitter"></i>
+			  </a>
+  
+			  <a href="" class="text-reset">
+				<i class="fab fa-telegram"></i>
+			  </a>
+  
+			  <a href="https://github.com/biggmomah/theblockchainhouse" class="text-reset">
+				<i class="fab fa-github"></i>
+			  </a>
+			</li>
+		  </div>    
+		  
+	  </ul>   
+	  </div>
+	</div>
+  </footer>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/form.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

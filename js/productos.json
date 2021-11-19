@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "Gestion de carteras",
+        "descripcion": "La gestión de carteras es una actividad que consiste en tomar decisiones de inversión y aplicarlas sobre un conjunto de activos seleccionado de forma discrecional y personalizada. ",
+        "imagen": "img/fondo_inversion.jpg",
+        "precio": "12000",
+        "id": 1
+    },
+
+    {
+        "nombre": "Mentorias",
+        "descripcion": "No sabes por donde empezar? Quisieras que alguien te enseñe por donde ir y en que podes estar fallando? Nosotros armamos un programa basado en lo que necesites. ",
+        "imagen": "img/aprendizaje.jpg",
+        "precio": "150000",
+        "id": 2
+    },
+
+    {
+        "nombre": "Cripto 101",
+        "descripcion": "El ABC del mundo cripto. Bitcoin? Ethereum? Blockchain? DeFi? P2E? Todo lo básico que necesitas para entender este complejo mundo. Despues de este curso contaras con las herramientas para operar con total confianza.",
+        "imagen": "img/cripto_101.jpg",
+        "precio": "1000",
+        "id": 3
+    }
+    
+]
+
